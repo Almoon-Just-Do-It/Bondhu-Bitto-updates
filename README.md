@@ -4,6 +4,9 @@ A full-stack starter application with:
 - Administrator and member sign-in
 - Member account creation and activation/deactivation
 - Monthly kisti/payment recording
+- Member-submitted payments remain pending until an administrator approves them
+- Admin-managed notice board with image/file attachments, member emergency inbox with attachments, and an in-app Ask FAQ assistant
+- WhatsApp contact shortcut for signed-in users (configured with `WHATSAPP_NUMBER`)
 - Individual member savings history
 - Organization dashboard and monthly collection totals
 - CSV export of the payment ledger
@@ -24,6 +27,7 @@ A full-stack starter application with:
    - `ADMIN_EMAIL` to the administrator's email
    - `ADMIN_PASSWORD` to a strong password of at least 10 characters
    - `APP_URL` and `SMTP_HOST`, `SMTP_PORT`, `SMTP_SECURE`, `SMTP_USER`, `SMTP_PASS`, `SMTP_FROM` to enable password reset emails
+   - `WHATSAPP_NUMBER` in international digits (country code, no `+` or spaces) to show the WhatsApp contact button
 7. Run `npm start`.
 8. Open `http://localhost:3000` in your browser.
 
